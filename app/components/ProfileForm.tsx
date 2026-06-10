@@ -36,7 +36,7 @@ export default function ProfileForm({ onSubmit, initialProfile }: ProfileFormPro
 
   function handleSubmit() {
     if (selected.length === 0) return;
-    onSubmit({ name: name.trim() || "Utilisateur", city: city.trim(), needs: selected });
+    onSubmit({ name: name.trim(), city: city.trim(), needs: selected });
   }
 
   return (
